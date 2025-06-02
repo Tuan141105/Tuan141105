@@ -1,0 +1,83 @@
+.os-app-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .os-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .os-template-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .os-template-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+    transition: 0.3s;
+  }
+
+  .os-template-image {
+    max-width: 100px;
+    max-height: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px; }
+  
+  .os-template-card.os-selected {
+    border-color: #007bff;
+    background-color: #e6f7ff;
+  }
+  
+  .os-template-name {
+    margin: 10px 0;
+  }
+  
+  .os-template-select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .os-support-request {
+    margin-top: 20px;
+  }
+  
+  .os-support-header {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .os-support-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .os-continue-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .os-continue-button:hover {
+    background-color: #0056b3;
+  }
+  

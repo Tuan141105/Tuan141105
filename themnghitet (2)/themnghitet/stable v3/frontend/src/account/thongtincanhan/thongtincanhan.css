@@ -1,0 +1,52 @@
+
+  
+  .acc-info {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 15px; */
+  }
+  
+  .acc-info label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    width: 30%; /* Độ rộng của label */
+  }
+
+/* .change {
+    padding-bottom: 20px;
+  } */
+  
+  .acc-info input,
+  .acc-info select {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 800px;
+  }
+  
+  .acc-info input:focus,
+  .acc-info select:focus {
+    border-color: #0056b3;
+  }
+  
+  .acc-info-button {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 700px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    text-align: center;
+  }
+  
+  .acc-info-button:hover {
+    background-color: #218838;
+  }
+  

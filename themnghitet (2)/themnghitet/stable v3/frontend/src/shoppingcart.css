@@ -1,0 +1,198 @@
+.cart-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .cart-table th {
+    background-color: #0078d4;
+    color: white;
+  }
+  
+  .cart-table td select {
+    padding: 5px;
+  }
+  
+  .remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .remove-button:hover {
+    background-color: #e60000;
+  }
+  
+  .support-section h4 {
+    margin-bottom: 10px;
+  }
+  
+  .support-section textarea {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .cart-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .cart-summary h4 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+  }
+  
+  .summary-item,
+  .summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .summary-total {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .registration-options {
+    margin-top: 15px;
+  }
+  
+  .registration-options label {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .customer-dropdown {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .customer-dropdown select {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  .add-customer {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .add-customer:hover {
+    background-color: #005a9e;
+  }
+  
+  .checkout-button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .checkout-button:hover {
+    background-color: #218838;
+  }
+
+  /* Overlay làm mờ nền */
+/* Lớp phủ (Overlay) cho Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Làm mờ nền */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Đảm bảo nằm trên tất cả các phần tử khác */
+  animation: fadeInOverlay 0.3s ease-out; /* Hiệu ứng hiện lớp phủ */
+}
+
+/* Hiệu ứng hiện lớp phủ */
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Nội dung hộp thoại */
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1001;
+  animation: fadeIn 0.3s ease-out; /* Hiệu ứng hiện lên */
+}
+
+/* Hiệu ứng hiện lên cho nội dung modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Modal di chuyển từ trên xuống */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Nút đóng (Exit Button) */
+.exit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f44336; /* Màu nền đỏ */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+}
+
+/* Hiệu ứng hover cho nút đóng */
+.exit-btn:hover {
+  background-color: #d32f2f; /* Đổi màu nền khi hover */
+}
+
+.form-group {
+  width: 90%;
+}
